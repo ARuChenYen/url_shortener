@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url_added</title>
+</head>
+<body>
+    <h2>Shortener Url</h2>
+    <a href="{{ url_for('short.redirect_to_url', short_url=new_url, _external='True') }}">
+    {{ url_for('short.redirect_to_url', short_url=new_url, _external='True') }}</a><br>
+    <h2>Original Url</h2>
+    {{ original_url }}<br>
+</body>
+</html>
